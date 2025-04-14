@@ -1,0 +1,168 @@
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.person {
+    position: fixed;
+    height: 80%;
+    width: auto;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: #EEFFE4;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.recent {
+    position: fixed;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 75vh;
+    margin-left: 400px;
+    margin-top: 70px;
+    background: linear-gradient(to bottom, rgba(230, 216, 255, 0.8), rgba(177, 198, 255, 0.8));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.songList {
+    width: 100%;
+    overflow-y: auto;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    /* 隐藏滚动条 */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.likeList {
+    position: fixed;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 62vh;
+    margin-left: 900px;
+    margin-top: 70px;
+    background: linear-gradient(to bottom, rgba(216, 222, 255, 0.9), rgba(222, 255, 225, 0.9));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.setting {
+    position: fixed;
+    width: 30vw;
+    height: 10vh;
+    margin-left: 900px;
+    border-radius: 15px;
+    margin-top: calc(70px + 65vh);
+    background: linear-gradient(to right, #D0EFD9, #D0EFD9, #A5D0E7);
+    color: #83A5E3;
+    font-size: 24px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    cursor: pointer;
+
+    .arrow {
+        width: 20px;
+        height: auto;
+        position: relative;
+        left: 70px;
+    }
+}
+
+.settingBg {
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 1002;
+    display: flex;
+    right: 170px;
+    width: 60vw;
+    height: 57vh;
+    background: white;
+    border-radius: 20px;
+    flex-direction: column;
+    z-index: 9999 !important;
+    top: 30px;
+
+    .title {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 800;
+        color: #EFE0FF;
+        background-color: rgb(166, 140, 204);
+        border-radius: 20px 20px 0 0;
+    }
+
+    .content {
+        margin-top: 0px;
+        width: 100%;
+        height: 88%;
+        background: linear-gradient(to bottom, rgb(185, 175, 206), rgb(162, 183, 229));
+        border-radius: 0 0 20px 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .row {
+            width: 70%;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            color: rgb(110, 51, 199);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            .confirm {
+                background-color: #5872da;
+            }
+        }
+    }
+}
+
+.ant-modal-body {
+    pointer-events: none;
+    /* 允许穿透点击 */
+}

@@ -1,0 +1,29 @@
+.background {
+    box-sizing: border-box;
+    padding: 5px 20px;
+    width: 95%;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    flex-direction: row;
+    color: #5E94AF;
+    font-size: 14px;
+    font-weight: 600;
+
+
+    .name{
+        width: 300px;
+    }
+
+    .playIcon {
+        cursor: pointer;
+    }
+    .heartIcon {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    
+}

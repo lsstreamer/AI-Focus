@@ -1,0 +1,184 @@
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.person {
+    position: fixed;
+    height: 80%;
+    width: auto;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.data {
+    width: 55vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-top: 70px;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        height: 45%;
+        margin-bottom: 30px;
+
+        .evaluation {
+            height: 100%;
+            width: 55%;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to bottom,
+                    rgba(219, 255, 198, 0.8),
+                    rgba(218, 241, 255, 0.8));
+
+            transition: all 0.3s ease-in-out;
+
+            .title {
+                font-size: 24px;
+                margin-top: 15px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                font-weight: 800;
+                color: #EEFFE4;
+                text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 70%;
+                margin-left: 20px;
+                margin-right: 20px;
+                gap: 15px; // 添加子元素之间的间距
+            }
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        .state {
+            height: 100%;
+            width: 36%;
+            margin-left: auto;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to bottom,
+                    rgba(225, 199, 255, 0.8),
+                    rgba(218, 241, 255, 0.8));
+
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            .title {
+                font-size: 24px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                font-weight: 800;
+                color: #F1DFFF;
+                text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 70%;
+
+
+                .image {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                    height: 80%;
+                    width: 85%;
+                    min-height: 0;
+                    place-items: center; // 使网格项在水平和垂直方向上居中
+
+                    .emotion {
+                        height: 100%;
+                        width: 100%;
+                        min-height: 0;
+                        object-fit: contain; // 保持图片比例
+                        justify-self: center; // 水平居中
+                    }
+
+                    .ai {
+                        height: 90%;
+                        width: 90%;
+                        min-height: 0;
+                        object-fit: contain; // 保持图片比例
+                        justify-self: center; // 水平居中
+                    }
+                }
+
+                .text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80%;
+                    height: 20%;
+                    margin-top: 10px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    font-weight: 800;
+                    color: #937BFF;
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+
+    }
+
+    .bottom {
+        width: 100%;
+        height: 45%;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to bottom,
+                rgba(203, 234, 255, 0.9),
+                rgba(177, 186, 255, 0.9));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        // 添加弹性布局
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+
+        .charContainer {
+            margin-left: 50px;
+            margin-top: 40px;
+            width: 40%;
+            height: 100%;
+        }
+    }
+}

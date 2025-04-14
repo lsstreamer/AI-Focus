@@ -1,0 +1,53 @@
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 8vh auto 0; 
+}
+
+.func {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 定义三列等宽的网格 */
+    gap: 10px; /* 设置网格间距 */
+    width: 70%; /* 确保网格占满容器宽度 */
+    margin: 5vh auto; /* 水平居中 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #e3e3e3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* 添加自定义字体 */
+    font-family: 'Arial', sans-serif; /* 可以替换成你想要的字体 */
+
+    transition: transform 0.3s ease, text-shadow 0.3s ease; 
+    &:hover {
+        cursor: pointer; /* 鼠标悬停时变成手型指针 */
+        .card{
+            transform: scale(1.05); /* 鼠标悬停时微微放大 */
+        }
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* 悬停时增加更深更大的文字阴影 */
+    }
+}
+.card {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+}

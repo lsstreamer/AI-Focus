@@ -1,0 +1,29 @@
+.background {
+    box-sizing: border-box;
+    background-color: aqua;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    color: #34C09D;
+    // 使用flex布局实现水平排列和垂直居中
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.dotContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.dot{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}

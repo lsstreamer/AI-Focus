@@ -1,0 +1,52 @@
+.topBar {
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(
+        to right,
+        #E2FFD1,
+        #DAF1FF,
+        #E1C7FF
+    );
+}
+
+.logoContainer {
+    display: flex;  /* 改为flex布局以实现居中 */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.logo{
+    height: 70%;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 三列等宽布局 */
+    gap: 5px;  /* 格子之间的间距 */
+    width: 30%;  /* 确保占满容器宽度 */
+    height: 100%;
+    margin-left: 15px;  /* 让菜单靠右 */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    color: #7979FF;
+    transition: font-size 0.3s ease; /* 添加字体大小变化的过渡动画 */
+
+    &:hover{
+        cursor: pointer;
+        font-size: 22px; /* 悬停时字体放大 */
+    }
+}

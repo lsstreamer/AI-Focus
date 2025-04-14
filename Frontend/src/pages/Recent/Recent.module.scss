@@ -1,0 +1,55 @@
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.focusTime {
+    width: 35vw;
+    height: 40vh;
+    position: fixed;
+    margin-left: 200px;
+    margin-top: 70px;
+    background: linear-gradient(to bottom, rgb(172, 204, 229), rgb(204, 192, 229));
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person {
+    position: fixed;
+    margin-left: 200px;
+    width: 35vw;
+    height: auto;
+    margin-top: 400px;
+}
+
+.week {
+    width: 33vw;
+    height: 75vh;
+    position: fixed;
+    margin-left: 770px;
+    margin-top: 70px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .text{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: #F3F2FF;
+        font-weight: 800;
+    }
+}
